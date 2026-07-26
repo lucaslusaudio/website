@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+body {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(255, 255, 255, 0.025),
+      transparent 55%
+    ),
+    radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.45), transparent 70%),
+    linear-gradient(180deg, #17191b 0%, #131517 45%, #101214 100%);
+
+  color: var(--text);
+
+  font-family: var(--font);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+
+  background-size: 4px 4px;
+
+  opacity: 0.18;
+
+  pointer-events: none;
+
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background: radial-gradient(
+    circle,
+    transparent 35%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+
+  pointer-events: none;
+
+  z-index: -1;
+}
