@@ -21,6 +21,10 @@
   src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
   font-weight: 700;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   min-height: 100vh;
 
@@ -43,8 +47,6 @@ body {
   text-rendering: optimizeLegibility;
 
   position: relative;
-
-  overflow-x: hidden;
 }
 
 body::before {

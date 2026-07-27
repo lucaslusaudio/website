@@ -337,6 +337,25 @@
 .hero-footer a:hover {
   color: rgba(255, 255, 255, 0.82);
 }
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+
+  color: rgba(255, 255, 255, 0.66);
+
+  transition: color 1s ease;
+}
+
+.social-icon:hover svg {
+  color: rgba(255, 255, 255, 0.82);
+}
 @keyframes heroReveal {
   from {
     opacity: 0;

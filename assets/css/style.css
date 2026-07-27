@@ -207,11 +207,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.about-page .hero-header {
+  position: static;
+}
 /* HERO */
 
 .about-hero {
-  min-height: 100vh;
+  min-height: 77vh;
 
   display: flex;
   justify-content: center;
@@ -313,10 +315,6 @@
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.03em;
-}
-
-.about-header {
-  position: absolute;
 }
 
 /* SELECTED WORK */
@@ -670,9 +668,6 @@
   }
 }
 
-.about-page {
-  animation: aboutFadeUp 1s cubic-bezier(0.22, 1, 0.36, 1);
-}
 .about-hero,
 .about-image,
 .about-ending,
@@ -716,4 +711,239 @@
 .about-ending,
 .about-selected {
   animation: aboutReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ==========================================
+   RESPONSIVIDADE - TABLET / MOBILE
+========================================== */
+
+@media (max-width: 900px) {
+  /* --- HEADER / NAVEGAÇÃO (todas as páginas) --- */
+  .hero-header {
+    padding: 16px 20px;
+  }
+
+  .navigation-frame {
+    padding: 0;
+    padding-top: 54px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 14px;
+    column-gap: 22px;
+  }
+
+  .navigation a {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  .navigation a:hover::after,
+  .navigation a.active::after {
+    width: 70%;
+  }
+
+  .language-switcher {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 32px;
+    font-size: 10px;
+  }
+
+  .home-logo-link {
+    top: 16px;
+    left: 16px;
+  }
+
+  .logo.logo-small {
+    font-size: 16px;
+  }
+
+  .logo-small .lus {
+    margin-left: 10px;
+  }
+
+  /* --- HOME --- */
+  .hero {
+    padding: 120px 24px 40px;
+  }
+
+  .hero-content {
+    transform: translateY(-50px);
+  }
+
+  .logo {
+    font-size: 72px;
+  }
+
+  .lus {
+    margin-left: 44px;
+  }
+
+  .subtitle {
+    margin-top: 32px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+  }
+
+  .cta {
+    width: 100%;
+    max-width: 360px;
+    height: 64px;
+    margin-top: 40px;
+    font-size: 13px;
+  }
+
+  .hero-footer {
+    padding-top: 48px;
+  }
+
+  /* --- SERVICES --- */
+  .services-hero {
+    padding: 130px 24px 40px;
+  }
+
+  .services-title {
+    font-size: 34px;
+  }
+
+  .services-grid {
+    flex-wrap: wrap;
+    padding: 0 24px 70px;
+    gap: 24px;
+  }
+
+  .service-card {
+    width: 45% !important;
+    height: auto !important;
+    flex: 0 0 45% !important;
+  }
+
+  .service-card span {
+    font-size: 16px;
+  }
+
+  /* --- ABOUT --- */
+  .about-hero {
+    padding: 0 24px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-image {
+    padding: 40px 24px 80px;
+  }
+
+  .about-ending {
+    padding: 0 24px 100px;
+  }
+
+  .about-ending h2 {
+    font-size: 28px;
+  }
+
+  .about-selected {
+    padding: 0 24px 100px;
+  }
+
+  .about-selected-title {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  .selected-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* --- SELECTED WORK --- */
+  .selected-work-list {
+    padding: 30px 24px 70px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .work-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .work-image {
+    width: 100%;
+  }
+
+  .work-title {
+    font-size: 32px;
+  }
+
+  .work-artist {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  /* --- CONTACT --- */
+  .contact-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .contact-email {
+    font-size: 22px;
+  }
+
+  .contact-location {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 52px;
+  }
+
+  .lus {
+    margin-left: 28px;
+  }
+
+  .navigation {
+    column-gap: 16px;
+    row-gap: 10px;
+  }
+
+  .navigation a {
+    font-size: 9px;
+  }
+
+  .service-card {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .services-title {
+    font-size: 28px;
+  }
+
+  .about-title,
+  .about-ending h2 {
+    font-size: 24px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-email {
+    font-size: 18px;
+  }
 }
