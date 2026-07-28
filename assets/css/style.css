@@ -108,21 +108,22 @@
 
 .service-mixmaster {
   background-image: url("../images/services/mix-master.png");
-  background-position: center 30%;
+  background-position: 25% center;
 }
 
 .service-mix {
   background-image: url("../images/services/mix.png?v=1");
+  background-position: 35% center;
 }
 
 .service-master {
   background-image: url("../images/services/master.png");
-  background-position: center 40%;
+  background-position: 25% center;
 }
 
 .service-mentoring {
   background-image: url("../images/services/mentoring.png");
-  background-position: center 25%;
+  background-position: 75% center;
 }
 .service-card::before {
   content: "";
@@ -213,7 +214,7 @@
 /* HERO */
 
 .about-hero {
-  min-height: 77vh;
+  min-height: vh;
 
   display: flex;
   justify-content: center;
