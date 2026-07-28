@@ -108,22 +108,22 @@
 
 .service-mixmaster {
   background-image: url("../images/services/mix-master.png");
-  background-position: 25% center;
+  background-position: 5% center;
 }
 
 .service-mix {
   background-image: url("../images/services/mix.png?v=1");
-  background-position: 35% center;
+  background-position: 15% center;
 }
 
 .service-master {
   background-image: url("../images/services/master.png");
-  background-position: 25% center;
+  background-position: 5% center;
 }
 
 .service-mentoring {
   background-image: url("../images/services/mentoring.png");
-  background-position: 75% center;
+  background-position: 90% center;
 }
 .service-card::before {
   content: "";
