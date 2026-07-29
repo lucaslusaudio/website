@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Start Your Project | Lucas Lus Audio</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/quote.css" />
+  </head>
+
+  <body>
+    <main class="quote-page">
+      <header class="hero-header">
+        <div class="navigation-frame">
+          <nav class="navigation">
+            <a href="services-en.html">Services</a>
+            <a href="selected-work-en.html">Selected Work</a>
+            <a href="about-en.html">About</a>
+            <a href="contact-en.html">Contact</a>
+          </nav>
+
+          <div class="language-switcher">
+            <a href="orcamento.html">PT</a>
+            <span>|</span>
+            <a href="orcamento-en.html" class="active">EN</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="quote-hero">
+        <p class="quote-eyebrow">Start your project</p>
+        <h1 class="quote-title">Let's begin.</h1>
+        <p class="quote-tagline">Tell me a bit about you and your sound.</p>
+        <p class="quote-intro">
+          The more information you share, the better I can understand your
+          project and prepare an accurate quote.
+        </p>
+        <p class="quote-note">I usually reply within the same business day.</p>
+      </section>
+
+      <form class="quote-form" onsubmit="return false;">
+        <div class="quote-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h2 class="step-question">Which service are you looking for?</h2>
+
+            <div class="option-grid">
+              <label class="option-card">
+                <input type="radio" name="service" value="mixing" checked />
+                <span>Mixing</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="service" value="mastering" />
+                <span>Mastering</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="service" value="mix-master" />
+                <span>Mixing + Mastering</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="service" value="mentoring" />
+                <span>Mentoring</span>
+                <span class="option-check"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h2 class="step-question">Tell me about your track.</h2>
+
+            <textarea
+              class="quote-textarea"
+              placeholder="Talk about the style, sonic references, how it was recorded, your goal with the sound, etc."
+            ></textarea>
+
+            <p class="step-hint">
+              The more context, the better I can understand your vision.
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h2 class="step-question">
+              Is there a track whose sound you'd like to use as a reference?
+            </h2>
+
+            <input
+              type="text"
+              class="quote-input"
+              placeholder="Link from YouTube, Spotify, SoundCloud, Google Drive or Dropbox."
+            />
+
+            <p class="step-hint">
+              This helps me better understand the direction you're going for.
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h2 class="step-question">Do you have a deadline?</h2>
+
+            <div class="option-grid">
+              <label class="option-card">
+                <input type="radio" name="deadline" value="no-rush" checked />
+                <span>No rush</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="deadline" value="30-days" />
+                <span>Within 30 days</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input type="radio" name="deadline" value="15-days" />
+                <span>Within 15 days</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="deadline"
+                  id="prazo-outro"
+                  value="other"
+                />
+                <span>Other</span>
+                <span class="option-check"></span>
+              </label>
+            </div>
+
+            <input
+              type="text"
+              class="quote-input quote-input-conditional"
+              placeholder="Tell me a bit more about the timeline you need..."
+            />
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <h2 class="step-question">
+              How would you prefer I get in touch?
+            </h2>
+
+            <div class="option-grid option-grid-2">
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="contact"
+                  id="contato-whatsapp"
+                  value="whatsapp"
+                  checked
+                />
+                <span>WhatsApp</span>
+                <span class="option-check"></span>
+              </label>
+
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="contact"
+                  id="contato-email"
+                  value="email"
+                />
+                <span>Email</span>
+                <span class="option-check"></span>
+              </label>
+            </div>
+
+            <input
+              type="tel"
+              class="quote-input quote-input-whatsapp"
+              placeholder="WhatsApp number (with country code)"
+            />
+
+            <input
+              type="email"
+              class="quote-input quote-input-email"
+              placeholder="Your email"
+            />
+
+            <p class="step-hint">
+              I'll only use this to reach out about your project.
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-submit-wrap">
+          <button type="submit" class="quote-submit">
+            <span>Send Request</span>
+            <span class="quote-submit-arrow">→</span>
+          </button>
+
+          <p class="quote-submit-note">
+            This step is still under construction — soon you'll be able to
+            send it directly from here.
+          </p>
+        </div>
+      </form>
+
+      <a href="index-en.html" class="home-logo-link">
+        <h1 class="logo logo-small">
+          <span class="lucas">lucas</span>
+          <span class="lus">lus</span>
+        </h1>
+      </a>
+    </main>
+  </body>
+</html>

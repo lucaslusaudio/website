@@ -2,6 +2,7 @@
 @import url("./variables.css");
 @import url("./base.css");
 @import url("./home.css");
+
 /* ===========================
    SERVICES PAGE
 =========================== */
@@ -209,8 +210,13 @@
     0 1px 0 rgba(0, 0, 0, 0.35),
     0 2px 2px rgba(0, 0, 0, 0.25),
     0 4px 6px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 2s ease,
+    text-shadow 2s ease;
 }
-
+.service-card:hover span {
+  transform: translateY(-2px) scale(1.04);
+}
 .home-logo-link {
   position: fixed;
   top: 24px;
@@ -222,8 +228,9 @@
 }
 
 .logo-small {
-  font-size: 28px;
-
+  font-size: 33px;
+  margin-top: 5px;
+  margin-left: 3px;
   opacity: 0.72;
 
   transition:

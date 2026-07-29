@@ -1,0 +1,440 @@
+/* ===========================
+   ORÇAMENTO / SOLICITAR PROJETO
+=========================== */
+
+.quote-page {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.5), rgba(8, 8, 8, 0.65)),
+    url("../images/services/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  padding-bottom: 160px;
+}
+
+/* HERO */
+
+.quote-hero {
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  padding: 190px 24px 90px;
+
+  animation: aboutFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.quote-eyebrow {
+  margin-bottom: 18px;
+
+  color: rgba(255, 195, 120, 0.85);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.quote-title {
+  margin: 0 0 26px;
+
+  background: linear-gradient(
+    100deg,
+    #8a8a8a 0%,
+    #e8e8e8 20%,
+    #ffffff 35%,
+    #9a9a9a 50%,
+    #d4d4d4 65%,
+    #ffffff 80%,
+    #b0b0b0 100%
+  );
+  background-size: 200% 100%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.35),
+    0 4px 10px rgba(0, 0, 0, 0.7),
+    0 16px 34px rgba(0, 0, 0, 0.5);
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  animation: titleShine 7s ease-in-out infinite;
+}
+
+.quote-tagline {
+  margin: 0 0 22px;
+
+  color: rgba(255, 195, 120, 0.85);
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.quote-intro {
+  margin: 0 0 32px;
+
+  color: var(--text-secondary);
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.quote-note {
+  padding-left: 18px;
+
+  border-left: 2px solid rgba(255, 195, 120, 0.5);
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* FORM SHELL */
+
+.quote-form {
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+}
+
+.quote-step {
+  display: flex;
+  gap: 28px;
+
+  padding: 46px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aboutFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.quote-step:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.quote-step:nth-of-type(2) {
+  animation-delay: 0.12s;
+}
+.quote-step:nth-of-type(3) {
+  animation-delay: 0.19s;
+}
+.quote-step:nth-of-type(4) {
+  animation-delay: 0.26s;
+}
+.quote-step:nth-of-type(5) {
+  animation-delay: 0.33s;
+}
+
+.step-number {
+  flex-shrink: 0;
+
+  width: 48px;
+
+  color: rgba(255, 195, 120, 0.55);
+
+  font-size: 26px;
+  font-weight: 700;
+
+  letter-spacing: 0.05em;
+}
+
+.step-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.step-question {
+  margin: 0 0 22px;
+
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+.step-hint {
+  margin: 12px 0 0;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 13px;
+}
+
+/* OPTION CARDS (radio, estilizado) */
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.option-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.option-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 18px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.015);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.option-card input {
+  position: absolute;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option-card span:first-of-type {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  line-height: 1.3;
+}
+
+.option-check {
+  flex-shrink: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.option-card:hover {
+  border-color: rgba(255, 195, 120, 0.4);
+}
+
+.option-card:has(input:checked) {
+  border-color: rgba(255, 195, 120, 0.75);
+
+  background: rgba(255, 195, 120, 0.06);
+
+  box-shadow: 0 0 22px rgba(255, 195, 120, 0.12);
+}
+
+.option-card:has(input:checked) span:first-of-type {
+  color: rgba(255, 210, 150, 1);
+}
+
+.option-card:has(input:checked) .option-check {
+  border-color: rgba(255, 195, 120, 0.9);
+
+  background: rgba(255, 195, 120, 0.9);
+
+  box-shadow: 0 0 8px rgba(255, 195, 120, 0.5);
+}
+
+/* INPUTS DE TEXTO */
+
+.quote-textarea,
+.quote-input {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.015);
+
+  color: #fff;
+
+  font-family: var(--font);
+  font-size: 14px;
+
+  transition: border-color 0.3s ease;
+}
+
+.quote-textarea::placeholder,
+.quote-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.quote-textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.quote-textarea:focus,
+.quote-input:focus {
+  outline: none;
+
+  border-color: rgba(255, 195, 120, 0.6);
+}
+
+/* Campos condicionais (aparecem conforme a escolha) */
+
+.quote-input-conditional,
+.quote-input-whatsapp,
+.quote-input-email {
+  display: none;
+
+  margin-top: 14px;
+}
+
+.quote-step:has(#prazo-outro:checked) .quote-input-conditional {
+  display: block;
+}
+
+.quote-step:has(#contato-whatsapp:checked) .quote-input-whatsapp {
+  display: block;
+}
+
+.quote-step:has(#contato-email:checked) .quote-input-email {
+  display: block;
+}
+
+/* BOTÃO DE ENVIO */
+
+.quote-submit-wrap {
+  padding-top: 46px;
+
+  text-align: center;
+}
+
+.quote-submit {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 420px;
+
+  padding: 22px 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  border: 1px solid rgba(255, 195, 120, 0.5);
+  border-radius: 4px;
+
+  background: rgba(255, 195, 120, 0.05);
+
+  color: #fff;
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  transition:
+    border-color 0.4s ease,
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+}
+
+.quote-submit-arrow {
+  transition: transform 0.4s ease;
+}
+
+.quote-submit:hover {
+  border-color: rgba(255, 195, 120, 0.9);
+
+  background: rgba(255, 195, 120, 0.1);
+
+  box-shadow: 0 0 35px rgba(255, 195, 120, 0.25);
+
+  transform: translateY(-4px);
+}
+
+.quote-submit:hover .quote-submit-arrow {
+  transform: translateX(6px);
+}
+
+.quote-submit-note {
+  margin: 18px 0 0;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+  .quote-hero {
+    padding: 140px 20px 60px;
+  }
+
+  .quote-title {
+    font-size: 36px;
+  }
+
+  .quote-step {
+    flex-direction: column;
+    gap: 14px;
+
+    padding: 34px 0;
+  }
+
+  .step-number {
+    width: auto;
+
+    font-size: 20px;
+  }
+
+  .option-grid,
+  .option-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
