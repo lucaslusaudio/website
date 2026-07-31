@@ -1017,6 +1017,14 @@
 
   .hero-header {
     padding: 8px 20px;
+    pointer-events: none;
+  }
+
+  .hero-header a,
+  .hero-header .navigation,
+  .hero-header .navigation-frame,
+  .hero-header .language-switcher {
+    pointer-events: auto;
   }
 
   .navigation-frame {
@@ -1055,10 +1063,12 @@
 
   .home-logo-link {
     position: fixed;
-
     top: 65px;
     left: 16px;
     z-index: 1000;
+
+    outline: 2px solid red;
+    background: rgba(255, 0, 0, 0.15);
   }
 
   .logo.logo-small {
