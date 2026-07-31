@@ -169,8 +169,16 @@
 
   animation: heroReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.hero-content,
-.hero-header,
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-header {
+  position: fixed;
+  z-index: 1000;
+}
+
 .hero-footer {
   position: relative;
   z-index: 1;
