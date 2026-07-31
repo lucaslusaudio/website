@@ -246,6 +246,12 @@
   opacity: 1;
   transform: translateY(-2px);
 }
+.services-page .home-logo-link {
+  position: absolute;
+}
+.services-page .hero-header {
+  position: static;
+}
 /* ===========================
    ABOUT
 =========================== */
@@ -263,6 +269,9 @@
 }
 .about-page .hero-header {
   position: static;
+}
+.about-page .home-logo-link {
+  position: absolute;
 }
 /* HERO */
 
@@ -654,6 +663,12 @@
 
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+.selected-work-page .home-logo-link {
+  position: absolute;
+}
+.selected-work-page .hero-header {
+  position: static;
 }
 
 /* ===========================
@@ -1063,12 +1078,9 @@
 
   .home-logo-link {
     position: fixed;
-    top: 65px;
+    top: 105px;
     left: 16px;
     z-index: 1000;
-
-    outline: 2px solid red;
-    background: rgba(255, 0, 0, 0.15);
   }
 
   .logo.logo-small {
