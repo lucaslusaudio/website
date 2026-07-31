@@ -1583,7 +1583,7 @@
   font-size: 14px;
   font-weight: 400;
 
-  letter-spacing: 0.44em;
+  letter-spacing: 0.441em;
   text-transform: uppercase;
 }
 
@@ -1608,7 +1608,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(185, 146, 91, 0.55) 8%,
+    rgba(185, 146, 91, 0.55) 9%,
     rgba(185, 146, 91, 0.55) 92%,
     transparent
   );
