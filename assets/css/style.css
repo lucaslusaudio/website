@@ -1008,13 +1008,13 @@
     filter: blur(0);
   }
 }
-
 /* ==========================================
    RESPONSIVIDADE - TABLET / MOBILE
 ========================================== */
 
 @media (max-width: 900px) {
-  /* --- HEADER / NAVEGAÇÃO (todas as páginas) --- */
+  /* --- HEADER / NAVEGAÇÃO --- */
+
   .hero-header {
     padding: 8px 20px;
   }
@@ -1025,15 +1025,19 @@
   }
 
   .navigation {
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 14px;
-    column-gap: 22px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    gap: 0;
   }
 
   .navigation a {
-    font-size: 10px;
-    letter-spacing: 0.14em;
+    font-size: 8px;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
   }
 
   .navigation a:hover::after,
@@ -1045,13 +1049,16 @@
     position: static;
     transform: none;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 30px;
     font-size: 10px;
   }
 
   .home-logo-link {
-    top: 16px;
+    position: fixed;
+
+    top: 65px;
     left: 16px;
+    z-index: 1000;
   }
 
   .logo.logo-small {
@@ -1063,12 +1070,14 @@
   }
 
   /* --- HOME --- */
+
   .hero {
+    min-height: 100dvh;
     padding: 50px 24px 30px;
   }
 
   .hero-content {
-    transform: translateY(-55px);
+    transform: translateY(-70px);
     animation: heroRevealMobile 0.9s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
@@ -1099,6 +1108,7 @@
   }
 
   /* --- SERVICES --- */
+
   .services-hero {
     padding: 130px 24px 40px;
   }
@@ -1124,28 +1134,48 @@
   }
 
   /* --- ABOUT --- */
+
   .about-hero {
-    padding: 0 24px;
+    min-height: 72vh;
+    padding: 0 20px;
   }
 
   .about-title {
-    font-size: 30px;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.35;
   }
 
   .about-image {
-    padding: 40px 24px 80px;
+    padding: 36px 16px 60px;
   }
 
+  .about-image-wrapper {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+  .about-manifesto {
+    padding: 0 20px 140px;
+  }
+
+  .about-manifesto p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.45;
+  }
   .about-ending {
-    padding: 0 24px 100px;
+    padding: 0 20px 80px;
+    margin-top: 0;
   }
 
   .about-ending h2 {
-    font-size: 28px;
+    max-width: 100%;
+    font-size: 34px;
+    line-height: 1.35;
   }
 
   .about-selected {
-    padding: 0 24px 100px;
+    padding: 0 16px 70px;
   }
 
   .about-selected-title {
@@ -1159,6 +1189,7 @@
   }
 
   /* --- SELECTED WORK --- */
+
   .selected-work-list {
     padding: 30px 24px 70px;
     grid-template-columns: 1fr;
@@ -1183,8 +1214,15 @@
     margin-bottom: 12px;
     font-size: 16px;
   }
+  .selected-grid {
+    width: 100%;
+
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
 
   /* --- CONTACT --- */
+
   .contact-title {
     font-size: 36px;
     margin-bottom: 24px;
@@ -1214,12 +1252,19 @@
   }
 
   .navigation {
-    column-gap: 16px;
-    row-gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    gap: 0;
   }
 
   .navigation a {
-    font-size: 9px;
+    font-size: 8px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
   }
 
   .service-card {
@@ -1376,7 +1421,7 @@
 
   to {
     opacity: 1;
-    transform: translateY(-55px);
+    transform: translateY(-70px);
     filter: blur(0);
   }
 }
