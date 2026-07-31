@@ -247,6 +247,50 @@
   transform: translateY(-2px);
 }
 /* ===========================
+   SELECTED WORK HERO
+=========================== */
+
+.selected-work-hero {
+  padding: 160px 54px 65px;
+  text-align: center;
+  animation: servicesReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.selected-work-title {
+  color: #fff;
+
+  font-size: 60px;
+  font-weight: 700;
+
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    180deg,
+    #8a8a8a79 5%,
+    #e8e8e8 15%,
+    #ffffff 30%,
+    #9a9a9a5b 42%,
+    #d4d4d4 50%,
+    #ffffff 58%,
+    #7a7a7a2c 72%,
+    #c8c8c8 86%,
+    #ffffff 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  filter: drop-shadow(0 2px 10px rgba(255, 255, 255, 0.035));
+
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.4),
+    0 -1px 0 rgba(0, 0, 0, 0.45),
+    0 3px 6px rgba(0, 0, 0, 0.7),
+    0 14px 30px rgba(0, 0, 0, 0.5);
+}
+/* ===========================
    ABOUT
 =========================== */
 
@@ -1117,11 +1161,13 @@
 
   /* --- SERVICES --- */
 
-  .services-hero {
+  .services-hero,
+  .selected-work-hero {
     padding: 140px 24px 40px;
   }
 
-  .services-title {
+  .services-title,
+  .selected-work-title {
     font-size: 34px;
   }
 
