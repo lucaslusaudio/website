@@ -306,12 +306,14 @@
   background-repeat: no-repeat;
 }
 .about-page .hero-header {
-  position: static;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /* HERO */
 
 .about-hero {
-  min-height: 82vh;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -489,7 +491,7 @@
 .about-profile {
   width: min(1300px, calc(100% - 108px));
 
-  margin: 80px auto 140px;
+  margin: 160px auto 140px;
 
   display: grid;
   grid-template-columns: 480px 1fr;
