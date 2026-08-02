@@ -442,10 +442,11 @@
 }
 .about-manifesto {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
-  padding: 0 54px 160px;
+  padding: 20px 54px 90px;
+  margin-top: 60px;
 
   text-align: center;
 
@@ -456,52 +457,39 @@
 }
 
 .about-manifesto p {
-  max-width: 820px;
+  max-width: 2640px;
+  margin: 0 auto;
+  margin-top: -90px;
 
-  margin: 0;
-  margin-top: -100px;
-
-  background: linear-gradient(
-    100deg,
-    #8a8a8a 0%,
-    #e8e8e8 20%,
-    #ffffff 35%,
-    #9a9a9a 50%,
-    #d4d4d4 65%,
-    #ffffff 80%,
-    #b0b0b0 100%
-  );
-  background-size: 200% 100%;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.3),
-    0 3px 8px rgba(0, 0, 0, 0.6);
-
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 38px;
+  font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
 
-  animation: titleShine 7s ease-in-out infinite;
+  color: #ececec;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+  text-wrap: balance;
 }
 
 .manifesto-line {
   display: block;
 }
 
-.manifesto-line:first-child {
-  margin-bottom: 16px;
+.manifesto-line:last-child {
+  font-style: italic;
 }
+
+.manifesto-space {
+  display: block;
+  height: 6px;
+}
+
 /* PROFILE */
 
 .about-profile {
   width: min(1300px, calc(100% - 108px));
 
-  margin: 0 auto 140px;
+  margin: 80px auto 140px;
 
   display: grid;
   grid-template-columns: 480px 1fr;
@@ -569,7 +557,7 @@
 
 .about-selected {
   padding: 0 54px 80px;
-  margin-top: 0px;
+  margin-top: -140px;
 }
 .about-selected-title {
   margin: 0 0 70px;
@@ -595,10 +583,10 @@
     0 -1px 0 rgba(0, 0, 0, 0.5),
     0 4px 10px rgba(0, 0, 0, 0.75),
     0 16px 34px rgba(0, 0, 0, 0.55);
-  font-size: 51px;
+  font-size: 58px;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
