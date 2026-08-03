@@ -168,15 +168,57 @@
     window.open(url, "_blank");
   }
 
-  function openEmail(subject, message) {
-    const url =
-      "mailto:" +
-      EMAIL_TO +
-      "?subject=" +
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).catch(function () {
+        return fallbackCopy(text);
+      });
+    }
+    return Promise.resolve(fallbackCopy(text));
+  }
+
+  function fallbackCopy(text) {
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function openEmail(subject, message, lang) {
+    // Gmail web compose — more reliable on desktop than mailto:
+    const gmailUrl =
+      "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+      encodeURIComponent(EMAIL_TO) +
+      "&su=" +
       encodeURIComponent(subject) +
       "&body=" +
       encodeURIComponent(message);
-    window.location.href = url;
+
+    copyToClipboard(message).then(function () {
+      window.open(gmailUrl, "_blank");
+
+      const tip =
+        lang === "en"
+          ? "We opened Gmail with your message.\n\nIf you use another email provider, the message was copied — paste it into your email app and send to " +
+            EMAIL_TO
+          : "Abrimos o Gmail com a sua mensagem.\n\nSe você usa outro provedor (Outlook, etc.), a mensagem foi copiada — cole no seu e-mail e envie para " +
+            EMAIL_TO;
+
+      // Small delay so the new tab can open first
+      setTimeout(function () {
+        alert(tip);
+      }, 400);
+    });
   }
 
   function handleSubmit(event) {
@@ -208,7 +250,7 @@
     }
 
     if (contato === "email") {
-      openEmail(subject, message);
+      openEmail(subject, message, lang);
     } else {
       openWhatsApp(message);
     }
