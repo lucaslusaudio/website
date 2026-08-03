@@ -1,21 +1,5 @@
 <!doctype html>
 <html lang="pt-BR">
-  <!-- Schema.org (Dados Estruturados para o Google) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Lucas Lus Audio",
-      "url": "https://www.lucaslusaudio.com/",
-      "image": "https://www.lucaslusaudio.com/assets/images/og-image.jpg",
-      "description": "Mixagem e masterização profissional para artistas independentes.",
-      "sameAs": [
-        "https://instagram.com/lucaslusaudio",
-        "https://www.youtube.com/@lucaslusaudio",
-        "https://www.tiktok.com/@lucaslusaudio"
-      ]
-    }
-  </script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,12 +82,25 @@
         "name": "Lucas Lus Audio",
         "url": "https://www.lucaslusaudio.com/",
         "image": "https://www.lucaslusaudio.com/assets/images/og-image.jpg",
-        "description": "Mixagem e masterização profissional para artistas independentes.",
+        "logo": "https://www.lucaslusaudio.com/assets/images/favicon.png",
+        "description": "Mixagem e masterização profissional para artistas independentes. Transformo produções em faixas prontas para qualquer plataforma.",
+        "priceRange": "$$",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["Portuguese", "English"],
         "sameAs": [
           "https://instagram.com/lucaslusaudio",
           "https://www.youtube.com/@lucaslusaudio",
           "https://www.tiktok.com/@lucaslusaudio"
-        ]
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Áudio",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mixagem", "description": "Mixagem profissional de faixas musicais"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Masterização", "description": "Masterização profissional para distribuição digital"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mix & Master", "description": "Pacote completo de mixagem e masterização"}}
+          ]
+        }
       }
     </script>
   </head>
@@ -112,10 +109,11 @@
       <header class="hero-header">
         <div class="navigation-frame">
           <nav class="navigation">
-            <a href="services.html">Serviços</a>
-            <a href="selected-work.html">Portfólio</a>
+            <a href="services.html">SERVIÇOS</a>
+            <a href="selected-work.html">PORTFÓLIO</a>
             <a href="partners.html">PARCEIROS</a>
-            <a href="about.html">Sobre</a> <a href="contact.html">Contato</a>
+            <a href="about.html">SOBRE</a>
+            <a href="contact.html">CONTATO</a>
           </nav>
 
           <div class="language-switcher">

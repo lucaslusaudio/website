@@ -650,6 +650,46 @@
   position: relative;
 
   transition: transform 0.35s ease;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: workReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.work-item:nth-child(1) {
+  animation-delay: 0.17s;
+}
+.work-item:nth-child(2) {
+  animation-delay: 0.17s;
+}
+.work-item:nth-child(3) {
+  animation-delay: 0.26s;
+}
+.work-item:nth-child(4) {
+  animation-delay: 0.26s;
+}
+.work-item:nth-child(5) {
+  animation-delay: 0.42s;
+}
+.work-item:nth-child(6) {
+  animation-delay: 0.42s;
+}
+.work-item:nth-child(7) {
+  animation-delay: 0.58s;
+}
+.work-item:nth-child(8) {
+  animation-delay: 0.58s;
+}
+
+@keyframes workReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .work-item:last-child {
@@ -1147,9 +1187,10 @@
   }
 
   .navigation a {
-    font-size: 8px;
-    letter-spacing: 0.08em;
+    font-size: 10px;
+    letter-spacing: 0.06em;
     white-space: nowrap;
+    padding: 6px 2px;
   }
 
   .navigation a:hover::after,
@@ -1241,6 +1282,11 @@
     height: auto !important;
     flex: 0 0 45% !important;
   }
+  .service-card-wrap {
+    width: 45%;
+    height: auto;
+    flex: 0 0 45%;
+  }
 
   .service-card span {
     font-size: 16px;
@@ -1255,8 +1301,8 @@
 
   .about-title {
     max-width: 100%;
-    font-size: 20px;
-    line-height: 1.35;
+    font-size: 26px;
+    line-height: 1.4;
   }
 
   .about-image {
@@ -1296,7 +1342,7 @@
     margin-bottom: 32px;
   }
 
-  .selected-grid {
+  .about-page .selected-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
@@ -1348,9 +1394,8 @@
     margin-bottom: 12px;
     font-size: 16px;
   }
-  .selected-grid {
+  .selected-work-page .selected-grid {
     width: 100%;
-
     grid-template-columns: repeat(5, 1fr);
     gap: 6px;
   }
@@ -1396,9 +1441,10 @@
   }
 
   .navigation a {
-    font-size: 8px;
-    letter-spacing: 0.06em;
+    font-size: 9px;
+    letter-spacing: 0.04em;
     white-space: nowrap;
+    padding: 8px 1px;
   }
 
   .service-card {
