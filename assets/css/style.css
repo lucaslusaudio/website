@@ -1187,10 +1187,9 @@
   }
 
   .navigation a {
-    font-size: 10px;
-    letter-spacing: 0.06em;
+    font-size: 8px;
+    letter-spacing: 0.08em;
     white-space: nowrap;
-    padding: 6px 2px;
   }
 
   .navigation a:hover::after,
@@ -1289,7 +1288,11 @@
   }
 
   .service-card span {
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 0 12px;
+    line-height: 1.2;
   }
 
   /* --- ABOUT --- */
@@ -1314,27 +1317,32 @@
     aspect-ratio: 2 / 1;
   }
   .about-manifesto {
-    padding: 0 20px 140px;
+    padding: 40px 20px 40px;
+    margin-top: 0;
   }
 
   .about-manifesto p {
     max-width: 100%;
+    margin-top: 0;
     font-size: 15px;
     line-height: 1.45;
   }
+
   .about-ending {
-    padding: 0 20px 80px;
+    padding: 40px 20px 60px;
     margin-top: 0;
   }
 
   .about-ending h2 {
     max-width: 100%;
-    font-size: 34px;
+    margin: 0;
+    font-size: 28px;
     line-height: 1.35;
   }
 
   .about-selected {
-    padding: 0 16px 70px;
+    padding: 40px 16px 70px;
+    margin-top: 0;
   }
 
   .about-selected-title {
@@ -1352,7 +1360,15 @@
     grid-template-columns: 1fr;
     gap: 40px;
 
-    margin-bottom: 80px;
+    margin: 80px auto 60px;
+  }
+
+  .about-profile-line {
+    margin: 12px 0 20px;
+  }
+
+  .about-profile-content h2 {
+    margin-bottom: 16px;
   }
 
   .about-profile-content {
@@ -1441,15 +1457,19 @@
   }
 
   .navigation a {
-    font-size: 9px;
-    letter-spacing: 0.04em;
+    font-size: 8px;
+    letter-spacing: 0.06em;
     white-space: nowrap;
-    padding: 8px 1px;
   }
 
   .service-card {
     width: 100% !important;
     flex: 0 0 100% !important;
+  }
+
+  .service-card span {
+    font-size: 14px;
+    letter-spacing: 0.12em;
   }
 
   .services-title {
