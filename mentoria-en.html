@@ -110,17 +110,14 @@
         <p class="quote-note">I usually reply within the same business day.</p>
       </section>
 
-      <form class="quote-form" onsubmit="return false;">
+      <form class="quote-form" data-form="mentoria" data-lang="en" action="#">
         <!-- 01 — Needs -->
         <div class="quote-step">
           <div class="step-number">01</div>
           <div class="step-content">
             <h2 class="step-question">What are you looking for with mentoring?</h2>
 
-            <textarea
-              class="quote-textarea"
-              placeholder="E.g.: review my mixes, organize my DAW workflow, improve critical listening, ask questions about mastering, better understand the finishing process…"
-            ></textarea>
+            <textarea class="quote-textarea" name="necessidade" placeholder="E.g.: review my mixes, organize my DAW workflow, improve critical listening, ask questions about mastering, better understand the finishing process…" required></textarea>
 
             <p class="step-hint">
               It can be very specific or more open-ended. What matters is that I
@@ -178,6 +175,7 @@
             <input
               type="text"
               class="quote-input"
+              name="prazo_livre"
               placeholder="E.g.: no rush, prefer evenings, need it within 2 weeks…"
             />
 
@@ -218,13 +216,13 @@
 
             <input
               type="tel"
-              class="quote-input quote-input-whatsapp"
+              class="quote-input quote-input-whatsapp" name="cliente_whatsapp"
               placeholder="WhatsApp number (with country code)"
             />
 
             <input
               type="email"
-              class="quote-input quote-input-email"
+              class="quote-input quote-input-email" name="cliente_email"
               placeholder="Your email"
             />
 
@@ -240,11 +238,7 @@
             <span class="quote-submit-arrow">→</span>
           </button>
 
-          <p class="quote-submit-note">
-            This step is still under construction — soon you'll be able to send
-            it directly from here. For now, reach out at
-            studio@lucaslusaudio.com.
-          </p>
+          <p class="quote-submit-note">When you send, you will be taken to WhatsApp or your email app with the message ready.</p>
         </div>
       </form>
 
@@ -255,5 +249,6 @@
         </div>
       </a>
     </main>
+      <script src="assets/js/forms.js"></script>
   </body>
 </html>

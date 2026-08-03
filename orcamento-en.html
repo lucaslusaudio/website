@@ -119,7 +119,7 @@
         <p class="quote-note">I usually reply within the same business day.</p>
       </section>
 
-      <form class="quote-form" onsubmit="return false;">
+      <form class="quote-form" data-form="orcamento" data-lang="en" action="#">
         <div class="quote-step">
           <div class="step-number">01</div>
           <div class="step-content">
@@ -158,10 +158,7 @@
           <div class="step-content">
             <h2 class="step-question">Tell me about your track.</h2>
 
-            <textarea
-              class="quote-textarea"
-              placeholder="Talk about the style, sonic references, how it was recorded, your goal with the sound, etc."
-            ></textarea>
+            <textarea class="quote-textarea" name="sobre" placeholder="Talk about the style, sonic references, how it was recorded, your goal with the sound, etc." required></textarea>
 
             <p class="step-hint">
               The more context, the better I can understand your vision.
@@ -179,6 +176,7 @@
             <input
               type="text"
               class="quote-input"
+              name="referencia"
               placeholder="Link from YouTube, Spotify, SoundCloud, Google Drive or Dropbox."
             />
 
@@ -226,7 +224,7 @@
 
             <input
               type="text"
-              class="quote-input quote-input-conditional"
+              class="quote-input quote-input-conditional" name="prazo_detalhe"
               placeholder="Tell me a bit more about the timeline you need..."
             />
           </div>
@@ -264,13 +262,13 @@
 
             <input
               type="tel"
-              class="quote-input quote-input-whatsapp"
+              class="quote-input quote-input-whatsapp" name="cliente_whatsapp"
               placeholder="WhatsApp number (with country code)"
             />
 
             <input
               type="email"
-              class="quote-input quote-input-email"
+              class="quote-input quote-input-email" name="cliente_email"
               placeholder="Your email"
             />
 
@@ -286,10 +284,7 @@
             <span class="quote-submit-arrow">→</span>
           </button>
 
-          <p class="quote-submit-note">
-            This step is still under construction — soon you'll be able to send
-            it directly from here.
-          </p>
+          <p class="quote-submit-note">When you send, you will be taken to WhatsApp or your email app with the message ready.</p>
         </div>
       </form>
 
@@ -300,5 +295,6 @@
         </div>
       </a>
     </main>
+      <script src="assets/js/forms.js"></script>
   </body>
 </html>

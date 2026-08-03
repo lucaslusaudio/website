@@ -118,7 +118,7 @@
         <p class="quote-note">Normalmente respondo no mesmo dia útil.</p>
       </section>
 
-      <form class="quote-form" onsubmit="return false;">
+      <form class="quote-form" data-form="orcamento" data-lang="pt" action="#">
         <div class="quote-step">
           <div class="step-number">01</div>
           <div class="step-content">
@@ -157,10 +157,7 @@
           <div class="step-content">
             <h2 class="step-question">Conte sobre sua música.</h2>
 
-            <textarea
-              class="quote-textarea"
-              placeholder="Fale sobre o estilo, referência sonora, como foi gravada, seu objetivo com o som, etc."
-            ></textarea>
+            <textarea class="quote-textarea" name="sobre" placeholder="Fale sobre o estilo, referência sonora, como foi gravada, seu objetivo com o som, etc." required></textarea>
 
             <p class="step-hint">
               Quanto mais contexto, melhor poderei entender sua ideia.
@@ -179,6 +176,7 @@
             <input
               type="text"
               class="quote-input"
+              name="referencia"
               placeholder="Link do YouTube, Spotify, SoundCloud, Google Drive ou Dropbox."
             />
 
@@ -226,7 +224,7 @@
 
             <input
               type="text"
-              class="quote-input quote-input-conditional"
+              class="quote-input quote-input-conditional" name="prazo_detalhe"
               placeholder="Conte um pouco mais sobre o prazo desejado..."
             />
           </div>
@@ -264,13 +262,13 @@
 
             <input
               type="tel"
-              class="quote-input quote-input-whatsapp"
+              class="quote-input quote-input-whatsapp" name="cliente_whatsapp"
               placeholder="Número do WhatsApp (com DDD)"
             />
 
             <input
               type="email"
-              class="quote-input quote-input-email"
+              class="quote-input quote-input-email" name="cliente_email"
               placeholder="Seu e-mail"
             />
 
@@ -286,10 +284,7 @@
             <span class="quote-submit-arrow">→</span>
           </button>
 
-          <p class="quote-submit-note">
-            Essa etapa ainda está em construção — em breve você poderá enviar
-            direto por aqui.
-          </p>
+          <p class="quote-submit-note">Ao enviar, você será direcionado ao WhatsApp ou ao seu aplicativo de e-mail com a mensagem pronta.</p>
         </div>
       </form>
 
@@ -300,5 +295,6 @@
         </div>
       </a>
     </main>
+      <script src="assets/js/forms.js"></script>
   </body>
 </html>

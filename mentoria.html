@@ -74,7 +74,7 @@
   </head>
 
   <body>
-    <main class="quote-page mentoria-page">
+    <main class="quote-page">
       <header class="hero-header">
         <div class="navigation-frame">
           <nav class="navigation">
@@ -95,7 +95,9 @@
       <section class="quote-hero">
         <p class="quote-eyebrow">Mentoria</p>
         <h1 class="quote-title">Vamos conversar.</h1>
-        <p class="quote-tagline">Conte o que você precisa. Eu monto o plano.</p>
+        <p class="quote-tagline">
+          Conte o que você precisa. Eu monto o plano.
+        </p>
         <p class="quote-intro">
           A mentoria se adapta ao seu momento — seja revisar mixes, organizar o
           fluxo de trabalho, evoluir a escuta crítica ou tirar dúvidas pontuais.
@@ -105,17 +107,16 @@
         <p class="quote-note">Normalmente respondo no mesmo dia útil.</p>
       </section>
 
-      <form class="quote-form" onsubmit="return false;">
+      <form class="quote-form" data-form="mentoria" data-lang="pt" action="#">
         <!-- 01 — Necessidades -->
         <div class="quote-step">
           <div class="step-number">01</div>
           <div class="step-content">
-            <h2 class="step-question">O que você busca com a mentoria?</h2>
+            <h2 class="step-question">
+              O que você busca com a mentoria?
+            </h2>
 
-            <textarea
-              class="quote-textarea"
-              placeholder="Ex.: revisar minhas mixes, organizar meu fluxo no DAW, melhorar a escuta crítica, tirar dúvidas sobre masterização, entender melhor o processo de finalização…"
-            ></textarea>
+            <textarea class="quote-textarea" name="necessidade" placeholder="Ex.: revisar minhas mixes, organizar meu fluxo no DAW, melhorar a escuta crítica, tirar dúvidas sobre masterização, entender melhor o processo de finalização…" required></textarea>
 
             <p class="step-hint">
               Pode ser bem específico ou mais aberto. O importante é eu entender
@@ -173,12 +174,11 @@
             <input
               type="text"
               class="quote-input"
+              name="prazo_livre"
               placeholder="Ex.: sem pressa, preferência por noites, preciso em até 2 semanas…"
             />
 
-            <p class="step-hint">
-              Opcional — use se fizer diferença pro seu caso.
-            </p>
+            <p class="step-hint">Opcional — use se fizer diferença pro seu caso.</p>
           </div>
         </div>
 
@@ -215,13 +215,13 @@
 
             <input
               type="tel"
-              class="quote-input quote-input-whatsapp"
+              class="quote-input quote-input-whatsapp" name="cliente_whatsapp"
               placeholder="Número do WhatsApp (com DDD)"
             />
 
             <input
               type="email"
-              class="quote-input quote-input-email"
+              class="quote-input quote-input-email" name="cliente_email"
               placeholder="Seu e-mail"
             />
 
@@ -237,11 +237,7 @@
             <span class="quote-submit-arrow">→</span>
           </button>
 
-          <p class="quote-submit-note">
-            Essa etapa ainda está em construção — em breve você poderá enviar
-            direto por aqui. Por enquanto, use o e-mail
-            studio@lucaslusaudio.com.
-          </p>
+          <p class="quote-submit-note">Ao enviar, você será direcionado ao WhatsApp ou ao seu aplicativo de e-mail com a mensagem pronta.</p>
         </div>
       </form>
 
@@ -252,5 +248,6 @@
         </div>
       </a>
     </main>
+      <script src="assets/js/forms.js"></script>
   </body>
 </html>
