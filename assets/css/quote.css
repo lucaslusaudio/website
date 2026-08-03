@@ -438,3 +438,11 @@
     grid-template-columns: 1fr;
   }
 }
+
+.mentoria-page .quote-eyebrow {
+  font-size: 20px;
+}
+
+.mentoria-page .quote-title {
+  font-size: 40px;
+}
