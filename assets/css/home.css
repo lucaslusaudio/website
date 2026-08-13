@@ -501,17 +501,16 @@
 
 /* =========================================================
    LAPTOP / MONITOR MENOR (home)
-   Só ativa abaixo de 1400px — desktop grande permanece igual
 ========================================================= */
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .navigation {
-    gap: 72px;
+    gap: 56px;
   }
 
   .navigation a {
     font-size: 12px;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.22em;
   }
 
   .navigation-frame {

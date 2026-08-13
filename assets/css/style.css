@@ -1154,62 +1154,75 @@
 }
 /* =========================================================
    LAPTOP / MONITOR MENOR
-   Só ativa abaixo de 1400px — desktop grande permanece igual
 ========================================================= */
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .navigation {
-    gap: 72px;
+    gap: 56px;
   }
 
   .navigation a {
     font-size: 12px;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.22em;
   }
 
   .services-grid {
-    gap: 20px;
-    padding: 0 32px 100px;
+    gap: 18px;
+    padding: 0 28px 100px;
   }
 
   .service-card-wrap {
-    flex: 0 0 280px;
-    width: 280px;
-    height: 280px;
+    flex: 0 0 260px;
+    width: 260px;
+    height: 260px;
   }
 
   .service-card span {
-    font-size: 18px;
-    letter-spacing: 0.12em;
+    font-size: 16px;
+    letter-spacing: 0.1em;
   }
 
   .services-title,
   .selected-work-title {
-    font-size: 48px;
+    font-size: 46px;
   }
 
+  /* Portfólio: imagem em cima do texto (evita corte) */
   .selected-work-list {
-    gap: 50px 48px;
-    padding: 50px 40px 100px;
+    gap: 48px 40px;
+    padding: 50px 36px 100px;
+  }
+
+  .work-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
   }
 
   .work-image {
-    width: 320px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .work-title {
-    font-size: 42px;
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+
+  .work-artist {
+    font-size: 17px;
+    margin-bottom: 10px;
   }
 
   .about-title,
   .about-ending h2 {
-    font-size: 44px;
+    font-size: 42px;
   }
 
   .about-profile {
     width: min(1100px, calc(100% - 64px));
     gap: 56px;
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: 340px 1fr;
   }
 
   .process {
@@ -1221,7 +1234,7 @@
   }
 
   .partners-title {
-    font-size: 48px;
+    font-size: 46px;
   }
 }
 
@@ -1267,12 +1280,19 @@
     padding: 40px 32px 90px;
   }
 
+  .work-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
   .work-image {
-    width: min(420px, 100%);
+    width: 100%;
+    max-width: 520px;
   }
 
   .work-title {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .about-profile {
