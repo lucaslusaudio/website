@@ -498,3 +498,78 @@
   pointer-events: none;
   z-index: 0;
 }
+
+/* =========================================================
+   LAPTOP / MONITOR MENOR (home)
+   Só ativa abaixo de 1400px — desktop grande permanece igual
+========================================================= */
+
+@media (max-width: 1400px) {
+  .navigation {
+    gap: 72px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+    letter-spacing: 0.28em;
+  }
+
+  .navigation-frame {
+    padding: 18px 40px;
+  }
+
+  .logo {
+    font-size: 100px;
+  }
+
+  .lus {
+    margin-left: 90px;
+  }
+
+  .cta {
+    width: min(520px, 90vw);
+  }
+}
+
+@media (max-width: 1100px) {
+  .navigation {
+    gap: 36px;
+  }
+
+  .navigation a {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+  }
+
+  .navigation-frame {
+    padding: 16px 28px;
+  }
+
+  .hero {
+    padding: 10px 32px 40px;
+  }
+
+  .logo {
+    font-size: 84px;
+  }
+
+  .lus {
+    margin-left: 72px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    letter-spacing: 0.28em;
+  }
+
+  .cta {
+    width: min(460px, 92vw);
+    height: 68px;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+
+  .language-switcher {
+    font-size: 12px;
+  }
+}

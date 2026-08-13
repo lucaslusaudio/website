@@ -1152,6 +1152,161 @@
     filter: blur(0);
   }
 }
+/* =========================================================
+   LAPTOP / MONITOR MENOR
+   Só ativa abaixo de 1400px — desktop grande permanece igual
+========================================================= */
+
+@media (max-width: 1400px) {
+  .navigation {
+    gap: 72px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+    letter-spacing: 0.28em;
+  }
+
+  .services-grid {
+    gap: 20px;
+    padding: 0 32px 100px;
+  }
+
+  .service-card-wrap {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .service-card span {
+    font-size: 18px;
+    letter-spacing: 0.12em;
+  }
+
+  .services-title,
+  .selected-work-title {
+    font-size: 48px;
+  }
+
+  .selected-work-list {
+    gap: 50px 48px;
+    padding: 50px 40px 100px;
+  }
+
+  .work-image {
+    width: 320px;
+  }
+
+  .work-title {
+    font-size: 42px;
+  }
+
+  .about-title,
+  .about-ending h2 {
+    font-size: 44px;
+  }
+
+  .about-profile {
+    width: min(1100px, calc(100% - 64px));
+    gap: 56px;
+    grid-template-columns: 360px 1fr;
+  }
+
+  .process {
+    padding: 40px 40px 90px;
+  }
+
+  .timeline {
+    padding: 25px 40px 100px;
+  }
+
+  .partners-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navigation {
+    gap: 28px;
+  }
+
+  .navigation a {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+
+  .services-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    padding: 0 24px 90px;
+  }
+
+  .service-card-wrap {
+    flex: 0 0 240px;
+    width: 240px;
+    height: 240px;
+  }
+
+  .service-card span {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  .services-title,
+  .selected-work-title {
+    font-size: 40px;
+  }
+
+  .selected-work-list {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 32px 90px;
+  }
+
+  .work-image {
+    width: min(420px, 100%);
+  }
+
+  .work-title {
+    font-size: 36px;
+  }
+
+  .about-profile {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    width: calc(100% - 48px);
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-ending h2 {
+    font-size: 32px;
+  }
+
+  .about-selected {
+    margin-top: 0;
+  }
+
+  .timeline-label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .detail-title {
+    font-size: 40px;
+  }
+
+  .partners-title {
+    font-size: 40px;
+  }
+}
+
 /* ==========================================
    RESPONSIVIDADE - TABLET / MOBILE
 ========================================== */
