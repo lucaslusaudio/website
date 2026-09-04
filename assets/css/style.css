@@ -4,6 +4,88 @@
 @import url("./home.css");
 
 /* ===========================
+   BOTÃO FLUTUANTE "DÚVIDAS?"
+   (duplicado aqui, além de faq.css, pois o help-button
+   foi adicionado em páginas que não carregam faq.css —
+   garante que funcione em qualquer página do site)
+=========================== */
+
+.help-button {
+  position: fixed;
+
+  right: 28px;
+  bottom: 28px;
+
+  z-index: 900;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 14px 22px;
+
+  border: 1px solid rgba(255, 195, 120, 0.4);
+  border-radius: 999px;
+
+  background: rgba(15, 13, 11, 0.7);
+  backdrop-filter: blur(6px);
+
+  color: rgba(255, 255, 255, 0.85);
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.help-button::before {
+  content: "?";
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid rgba(255, 195, 120, 0.6);
+  border-radius: 50%;
+
+  color: rgba(255, 195, 120, 0.9);
+
+  font-size: 10px;
+}
+
+.help-button:hover {
+  border-color: rgba(255, 195, 120, 0.85);
+
+  box-shadow: 0 10px 34px rgba(255, 195, 120, 0.18);
+
+  transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+  .help-button {
+    right: 16px;
+    bottom: 16px;
+
+    padding: 12px 18px;
+
+    font-size: 10px;
+  }
+}
+
+/* ===========================
    WHATSAPP — BOTÃO FLUTUANTE
    (disponível em todas as páginas, pois style.css é global)
 =========================== */
@@ -880,6 +962,22 @@
   text-transform: uppercase;
 }
 
+.work-player {
+  margin-top: 24px;
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.015);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.work-player iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
 /* ===========================
    CONTACT
 =========================== */
@@ -1219,6 +1317,16 @@
   font-size: 18px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+.gear-note {
+  max-width: 900px;
+  margin: 20px auto 100px;
+  padding: 0 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.02em;
 }
 @keyframes partnersReveal {
   from {
