@@ -720,7 +720,7 @@
 /* SELECTED WORK */
 
 .about-selected {
-  padding: 0 54px 80px;
+  padding: 0 54px 30px;
   margin-top: -140px;
 }
 .about-selected-title {
@@ -797,7 +797,7 @@
 
   margin: 0;
 
-  padding: 70px 54px 120px;
+  padding: 70px 54px 50px;
 
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -995,7 +995,7 @@
 }
 
 .contact-content {
-  min-height: calc(100vh - 110px);
+  min-height: 60vh;
 
   display: flex;
   flex-direction: column;
@@ -1004,7 +1004,7 @@
 
   text-align: center;
 
-  padding: 0 40px;
+  padding: 80px 40px 0;
 }
 
 .contact-title,
@@ -1327,6 +1327,65 @@
   font-size: 13px;
   font-style: italic;
   letter-spacing: 0.02em;
+}
+
+.gear-specs {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 10px 24px 30px;
+}
+
+.gear-spec-row {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gear-spec-row:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gear-spec-label {
+  flex: 0 0 130px;
+
+  color: rgba(255, 195, 120, 0.8);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.gear-spec-value {
+  flex: 1;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .gear-spec-row {
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 16px 0;
+  }
+
+  .gear-spec-label {
+    flex: none;
+  }
+
+  .gear-spec-value {
+    font-size: 15px;
+  }
 }
 @keyframes partnersReveal {
   from {

@@ -1,5 +1,4 @@
 const hero = document.querySelector(".hero");
-console.log(hero);
 // Partículas flutuando sutilmente pelo fundo
 const particlesContainer = document.createElement("div");
 particlesContainer.className = "particles";
@@ -20,7 +19,6 @@ for (let i = 0; i < PARTICLE_COUNT; i++) {
   particle.style.animationDelay = `${delay}s`;
   particle.style.width = `${size}px`;
   particle.style.height = `${size}px`;
-  console.log("Criando partículas");
   particlesContainer.appendChild(particle);
 }
 
