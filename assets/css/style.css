@@ -738,14 +738,6 @@
 .about-credits-note a:hover {
   color: rgba(255, 220, 160, 0.9);
 }
-
-.about-credits-standalone {
-  max-width: 620px;
-  margin: -20px auto 60px;
-  padding: 0 24px;
-
-  text-align: center;
-}
 /* SELECTED WORK */
 
 .about-selected {
@@ -1775,10 +1767,6 @@
   .about-manifesto {
     padding: 16px 20px 16px;
     margin-top: 0;
-  }
-
-  .about-credits-standalone {
-    margin: 8px auto 24px;
   }
 
   .about-manifesto p {
