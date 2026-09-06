@@ -199,6 +199,17 @@
   color: rgba(255, 220, 160, 1);
 }
 
+.faq-intro a {
+  color: rgba(255, 195, 120, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s ease;
+}
+
+.faq-intro a:hover {
+  color: rgba(255, 220, 160, 1);
+}
+
 
 .faq-checklist {
   margin: 0;
