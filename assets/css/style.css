@@ -717,6 +717,35 @@
   font-size: 20px;
   line-height: 1.9;
 }
+
+.about-credits-note {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 13px;
+}
+
+.about-credits-note a {
+  color: rgba(255, 195, 120, 0.75);
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  transition: color 0.25s ease;
+}
+
+.about-credits-note a:hover {
+  color: rgba(255, 220, 160, 0.9);
+}
+
+.about-credits-standalone {
+  max-width: 620px;
+  margin: -20px auto 60px;
+  padding: 0 24px;
+
+  text-align: center;
+}
 /* SELECTED WORK */
 
 .about-selected {
@@ -1725,8 +1754,8 @@
   /* --- ABOUT --- */
 
   .about-hero {
-    min-height: 72vh;
-    padding: 0 20px;
+    min-height: 46vh;
+    padding: 40px 20px;
   }
 
   .about-title {
@@ -1736,7 +1765,7 @@
   }
 
   .about-image {
-    padding: 36px 16px 60px;
+    padding: 20px 16px 24px;
   }
 
   .about-image-wrapper {
@@ -1744,8 +1773,12 @@
     aspect-ratio: 2 / 1;
   }
   .about-manifesto {
-    padding: 40px 20px 40px;
+    padding: 16px 20px 16px;
     margin-top: 0;
+  }
+
+  .about-credits-standalone {
+    margin: 8px auto 24px;
   }
 
   .about-manifesto p {
@@ -1756,7 +1789,7 @@
   }
 
   .about-ending {
-    padding: 40px 20px 60px;
+    padding: 20px 20px 30px;
     margin-top: 0;
   }
 
@@ -1768,13 +1801,13 @@
   }
 
   .about-selected {
-    padding: 40px 16px 70px;
+    padding: 20px 16px 30px;
     margin-top: 0;
   }
 
   .about-selected-title {
     font-size: 26px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .about-page .selected-grid {
@@ -1785,13 +1818,13 @@
     width: calc(100% - 32px);
 
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 24px;
 
-    margin: 80px auto 60px;
+    margin: 30px auto 24px;
   }
 
   .about-profile-line {
-    margin: 12px 0 20px;
+    margin: 8px 0 14px;
   }
 
   .about-profile-content h2 {
