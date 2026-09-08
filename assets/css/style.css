@@ -1457,10 +1457,6 @@
   .timeline {
     padding: 25px 40px 100px;
   }
-
-  .partners-title {
-    font-size: 46px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -1543,10 +1539,6 @@
   }
 
   .detail-title {
-    font-size: 40px;
-  }
-
-  .partners-title {
     font-size: 40px;
   }
 }
