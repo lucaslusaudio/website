@@ -175,7 +175,7 @@
 
   background:
     linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.55)),
-    url("../images/services/background.png");
+    url("../images/services/background.webp");
 
   background-size: cover;
   background-position: center;
@@ -229,7 +229,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 35px;
   animation: servicesReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   animation-delay: 0.2s;
@@ -259,26 +259,40 @@
   background: #0b0b0b;
   text-decoration: none;
 
-  transition: transform 0.35s ease;
-}
-.service-card-wrap {
-  flex: 0 0 410px;
-  width: 410px;
-  height: 410px;
-  aspect-ratio: 1 / 1;
-
   filter: drop-shadow(0 0 1.2px rgba(255, 195, 120, 1))
     drop-shadow(0 0 0.4px rgba(255, 210, 150, 1))
     drop-shadow(0 28px 38px rgba(0, 0, 0, 0.85))
     drop-shadow(0 10px 16px rgba(20, 15, 10, 0.75));
 
-  transition: filter 0.4s ease;
+  transition:
+    transform 0.35s ease,
+    filter 0.4s ease;
 }
-.service-card-wrap:hover {
+.service-card-wrap {
+  flex: 0 0 410px;
+  width: 410px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-card-wrap:hover .service-card {
   filter: drop-shadow(0 0 2px rgba(255, 195, 120, 0.9))
     drop-shadow(0 0 14px rgba(255, 175, 90, 0.5))
     drop-shadow(0 28px 38px rgba(0, 0, 0, 0.85))
     drop-shadow(0 10px 16px rgba(20, 15, 10, 0.75));
+}
+
+.service-card-blurb {
+  margin-top: 20px;
+
+  max-width: 320px;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
 }
 .service-image {
   position: absolute;
@@ -295,22 +309,22 @@
 }
 
 .service-mixmaster {
-  background-image: url("../images/services/mix-master.png");
+  background-image: url("../images/services/mix-master.webp");
   transform: scale(1.06);
 }
 
 .service-mix {
-  background-image: url("../images/services/mix.png?v=1");
+  background-image: url("../images/services/mix.webp");
   background-position: 100% center;
 }
 
 .service-master {
-  background-image: url("../images/services/master.png");
+  background-image: url("../images/services/master.webp");
   background-position: 0% center;
 }
 
 .service-mentoring {
-  background-image: url("../images/services/mentoring.png");
+  background-image: url("../images/services/mentoring.webp");
   background-position: 100% center;
 }
 .service-card::before {
@@ -461,7 +475,7 @@
 
   background:
     linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.55)),
-    url("../images/services/background.png");
+    url("../images/services/background.webp");
 
   background-size: cover;
   background-position: center;
@@ -1008,7 +1022,7 @@
 
   background:
     linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.55)),
-    url("../images/services/background.png");
+    url("../images/services/background.webp");
 
   background-size: cover;
   background-position: center;
@@ -1271,7 +1285,7 @@
       transparent 50%
     ),
     linear-gradient(rgba(8, 8, 8, 0.38), rgba(8, 8, 8, 0.58)),
-    url("../images/services/background.png");
+    url("../images/services/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1382,7 +1396,6 @@
   .service-card-wrap {
     flex: 0 0 260px;
     width: 260px;
-    height: 260px;
   }
 
   .service-card span {
@@ -1470,7 +1483,6 @@
   .service-card-wrap {
     flex: 0 0 240px;
     width: 240px;
-    height: 240px;
   }
 
   .service-card span {
@@ -1893,7 +1905,7 @@
       transparent 50%
     ),
     linear-gradient(rgba(8, 8, 8, 0.38), rgba(8, 8, 8, 0.58)),
-    url("../images/services/background.png");
+    url("../images/services/background.webp");
 
   background-size: cover;
   background-position: center;
@@ -1923,7 +1935,7 @@
 
   background:
     linear-gradient(rgba(8, 8, 8, 0.5), rgba(8, 8, 8, 0.62)),
-    url("../images/services/background.png");
+    url("../images/services/background.webp");
 
   background-size: cover;
   background-position: center;

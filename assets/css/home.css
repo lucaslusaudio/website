@@ -19,7 +19,7 @@
 
   background:
     linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.55)),
-    url("../images/background.png");
+    url("../images/background.webp");
 
   background-size: cover;
   background-position: center;
