@@ -10,40 +10,93 @@
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/index-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/index-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/"/>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/services</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/services"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/services-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/services"/>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/services-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/services-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/services"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/selected-work</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/selected-work"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/selected-work-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/selected-work"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/selected-work-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/selected-work"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/selected-work-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/selected-work"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/orcamento</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/orcamento"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/orcamento-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/orcamento"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/orcamento-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/orcamento"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/orcamento-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/orcamento"/>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/mix-master</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/mix-master"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/mix-master-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/mix-master"/>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/mix-master-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/mix-master"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/mix-master-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/mix-master"/>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/mix</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/mix"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/mix-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/mix"/>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/mix-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/mix"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/mix-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/mix"/>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/master</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/master"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/master-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/master"/>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/master-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/master"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/master-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/master"/>
     <priority>0.75</priority>
   </url>
   <url>
@@ -55,54 +108,65 @@
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/mentoria-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/mentoria"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/mentoria-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/mentoria"/>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lucaslusaudio.com/selected-work</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.lucaslusaudio.com/selected-work-en</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.lucaslusaudio.com/about</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.lucaslusaudio.com/about-en</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.lucaslusaudio.com/antes-de-comecar</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/antes-de-comecar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/antes-de-comecar-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/antes-de-comecar"/>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/antes-de-comecar-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/antes-de-comecar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/antes-de-comecar-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/antes-de-comecar"/>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lucaslusaudio.com/orcamento</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.lucaslusaudio.com/orcamento-en</loc>
+    <loc>https://www.lucaslusaudio.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/about-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/about"/>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.lucaslusaudio.com/about-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/about-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/about"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/partners</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/partners"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/partners-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/partners"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/partners-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/partners"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/partners-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/partners"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.lucaslusaudio.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/contact-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/contact"/>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lucaslusaudio.com/contact-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/contact-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/contact"/>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.lucaslusaudio.com/partners</loc>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.lucaslusaudio.com/partners-en</loc>
-    <priority>0.3</priority>
   </url>
 </urlset>

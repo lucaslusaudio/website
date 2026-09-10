@@ -572,3 +572,266 @@
     font-size: 12px;
   }
 }
+
+/* =========================================================
+   HOME — SEÇÕES ABAIXO DO HERO
+========================================================= */
+
+.home-page {
+  position: relative;
+}
+
+/* Título descritivo (h1) — mais largo que o subtítulo antigo */
+
+.hero-content .subtitle {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 15px;
+  letter-spacing: 0.24em;
+  line-height: 1.9;
+}
+
+/* Indicador de rolagem */
+
+.scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+
+  transform: translateX(-50%);
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  animation: scrollCueFloat 2.4s ease-in-out infinite;
+
+  transition: color 0.35s ease;
+}
+
+.scroll-cue svg {
+  width: 22px;
+  height: 22px;
+}
+
+.scroll-cue:hover {
+  color: rgba(255, 195, 120, 0.9);
+}
+
+@keyframes scrollCueFloat {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+
+/* Estrutura comum das seções */
+
+.home-section {
+  width: min(1100px, 100%);
+
+  margin: 0 auto;
+  padding: 110px 54px;
+
+  text-align: center;
+}
+
+.home-section-title {
+  margin: 0 0 54px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 30px;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-section-link {
+  display: inline-block;
+
+  margin-top: 46px;
+
+  color: rgba(255, 195, 120, 0.8);
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-section-link:hover {
+  color: rgba(255, 220, 160, 1);
+  transform: translateX(4px);
+}
+
+/* Players */
+
+.home-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.home-player {
+  border-radius: 8px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.015);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.home-player iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* Processo */
+
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+
+  text-align: left;
+}
+
+.home-step {
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-step-number {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: rgba(255, 195, 120, 0.55);
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.home-step h3 {
+  margin: 0 0 12px;
+
+  color: #fff;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.home-step p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* CTA final */
+
+.home-final-cta {
+  padding-bottom: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-final-text {
+  max-width: 520px;
+
+  margin: 0 0 46px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.home-final-cta .cta {
+  margin-top: 0;
+}
+
+/* Responsividade das seções da home */
+
+@media (max-width: 900px) {
+  .home-section {
+    padding: 70px 28px;
+  }
+
+  .home-section-title {
+    margin-bottom: 36px;
+
+    font-size: 22px;
+    letter-spacing: 0.14em;
+  }
+
+  .home-players,
+  .home-steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .home-final-text {
+    font-size: 17px;
+    margin-bottom: 34px;
+  }
+
+  .home-final-cta {
+    padding-bottom: 110px;
+  }
+
+  .hero-content .subtitle {
+    max-width: 440px;
+
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 2;
+  }
+
+  .scroll-cue {
+    bottom: 78px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+    padding: 55px 22px;
+  }
+
+  .home-section-title {
+    font-size: 19px;
+  }
+
+  .hero-content .subtitle {
+    max-width: 300px;
+
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+}

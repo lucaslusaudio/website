@@ -229,7 +229,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 35px;
   animation: servicesReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   animation-delay: 0.2s;
@@ -285,18 +285,6 @@
     drop-shadow(0 0 14px rgba(255, 175, 90, 0.5))
     drop-shadow(0 28px 38px rgba(0, 0, 0, 0.85))
     drop-shadow(0 10px 16px rgba(20, 15, 10, 0.75));
-}
-
-.service-card-blurb {
-  margin-top: 20px;
-
-  max-width: 320px;
-
-  color: rgba(255, 255, 255, 0.45);
-
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: center;
 }
 .service-image {
   position: absolute;
