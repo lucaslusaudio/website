@@ -259,14 +259,7 @@
   background: #0b0b0b;
   text-decoration: none;
 
-  filter: drop-shadow(0 0 1.2px rgba(255, 195, 120, 1))
-    drop-shadow(0 0 0.4px rgba(255, 210, 150, 1))
-    drop-shadow(0 28px 38px rgba(0, 0, 0, 0.85))
-    drop-shadow(0 10px 16px rgba(20, 15, 10, 0.75));
-
-  transition:
-    transform 0.35s ease,
-    filter 0.4s ease;
+  transition: transform 0.35s ease;
 }
 .service-card-wrap {
   flex: 0 0 410px;
@@ -276,7 +269,18 @@
   flex-direction: column;
   align-items: center;
 }
-.service-card-wrap:hover .service-card {
+.service-card-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  filter: drop-shadow(0 0 1.2px rgba(255, 195, 120, 1))
+    drop-shadow(0 0 0.4px rgba(255, 210, 150, 1))
+    drop-shadow(0 28px 38px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 10px 16px rgba(20, 15, 10, 0.75));
+
+  transition: filter 0.4s ease;
+}
+.service-card-frame:hover {
   filter: drop-shadow(0 0 2px rgba(255, 195, 120, 0.9))
     drop-shadow(0 0 14px rgba(255, 175, 90, 0.5))
     drop-shadow(0 28px 38px rgba(0, 0, 0, 0.85))
@@ -367,7 +371,7 @@
 
   transition: box-shadow 0.4s ease;
 }
-.service-card-wrap:hover .service-card::after {
+.service-card-frame:hover .service-card::after {
   box-shadow: inset 0 0 0 2px rgba(255, 214, 160, 0.95);
 }
 .service-card span {
@@ -1687,9 +1691,9 @@
   }
 
   .service-card {
-    width: 45% !important;
-    height: auto !important;
-    flex: 0 0 45% !important;
+    width: 100% !important;
+    height: 100% !important;
+    flex: none !important;
   }
   .service-card-wrap {
     width: 45%;
