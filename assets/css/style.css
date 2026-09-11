@@ -2249,9 +2249,11 @@
 =========================== */
 
 .site-footer {
+  margin-top: 80px;
+
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 
-  padding: 54px 54px 46px;
+  padding: 64px 54px 46px;
 
   background: rgba(8, 8, 8, 0.35);
 }
@@ -2374,7 +2376,8 @@
 
 @media (max-width: 900px) {
   .site-footer {
-    padding: 40px 24px 90px;
+    margin-top: 50px;
+    padding: 44px 24px 90px;
   }
 
   .site-footer-inner {
