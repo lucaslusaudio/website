@@ -2243,3 +2243,148 @@
     padding: 0 24px 90px;
   }
 }
+
+/* ===========================
+   RODAPÉ GLOBAL
+=========================== */
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 54px 54px 46px;
+
+  background: rgba(8, 8, 8, 0.35);
+}
+
+.site-footer-inner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.site-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.site-footer-name {
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.site-footer-email {
+  color: rgba(255, 195, 120, 0.8);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: color 0.3s ease;
+}
+
+.site-footer-email:hover {
+  color: rgba(255, 220, 160, 1);
+}
+
+.site-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+}
+
+.site-footer-nav a {
+  color: rgba(255, 255, 255, 0.55);
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  transition: color 0.3s ease;
+}
+
+.site-footer-nav a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-footer-social a {
+  display: inline-flex;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: color 0.3s ease;
+}
+
+.site-footer-social a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-footer-social svg {
+  width: 18px;
+  height: 18px;
+}
+
+.site-footer-bottom {
+  width: min(1200px, 100%);
+  margin: 40px auto 0;
+
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.32);
+
+  font-size: 12px;
+}
+
+.site-footer-bottom a {
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer-bottom a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 900px) {
+  .site-footer {
+    padding: 40px 24px 90px;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .site-footer-bottom {
+    margin-top: 28px;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

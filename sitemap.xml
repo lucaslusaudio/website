@@ -169,4 +169,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/contact"/>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/privacidade</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/privacidade"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/privacy-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/privacidade"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.lucaslusaudio.com/privacy-en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.lucaslusaudio.com/privacidade"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lucaslusaudio.com/privacy-en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lucaslusaudio.com/privacidade"/>
+    <priority>0.2</priority>
+  </url>
 </urlset>

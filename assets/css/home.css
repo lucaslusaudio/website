@@ -16,14 +16,6 @@
   position: relative;
   overflow: hidden;
   isolation: isolate;
-
-  background:
-    linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.55)),
-    url("../images/background.webp");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .hero-header {
   position: absolute;
@@ -579,6 +571,17 @@
 
 .home-page {
   position: relative;
+
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.6)),
+    url("../images/background.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Título descritivo (h1) — mais largo que o subtítulo antigo */
@@ -780,6 +783,11 @@
 /* Responsividade das seções da home */
 
 @media (max-width: 900px) {
+  .home-page {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+
   .home-section {
     padding: 70px 28px;
   }
