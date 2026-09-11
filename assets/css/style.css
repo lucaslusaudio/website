@@ -400,38 +400,6 @@
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
-  .home-logo-link {
-    top: 26px;
-    left: 14px;
-  }
-
-  .home-logo-link .logo-small {
-    font-size: 16px;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .home-logo-link .logo-small .lus {
-    margin-left: 9px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-logo-link {
-    top: 24px;
-    left: 12px;
-  }
-
-  .home-logo-link .logo-small {
-    font-size: 14px;
-  }
-
-  .home-logo-link .logo-small .lus {
-    margin-left: 7px;
-  }
-}
-
 .logo-small {
   font-size: 33px;
   margin-top: 5px;
@@ -1648,17 +1616,20 @@
 
   .home-logo-link {
     position: absolute;
-    top: 105px;
-    left: 16px;
+    top: 69px;
+    left: 14px;
     z-index: 1000;
   }
 
   .logo.logo-small {
-    font-size: 16px;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.6;
   }
 
   .logo-small .lus {
-    margin-left: 10px;
+    margin-left: 7px;
   }
 
   /* --- HOME --- */
