@@ -571,8 +571,18 @@
 
 .home-page {
   position: relative;
+  z-index: 0;
 
   min-height: 100vh;
+}
+
+.home-page::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  z-index: -1;
 
   background:
     linear-gradient(rgba(8, 8, 8, 0.45), rgba(8, 8, 8, 0.6)),
@@ -581,7 +591,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
+  pointer-events: none;
 }
 
 /* Título descritivo (h1) — mais largo que o subtítulo antigo */
@@ -783,13 +794,12 @@
 /* Responsividade das seções da home */
 
 @media (max-width: 900px) {
-  .home-page {
-    background-attachment: scroll;
-    background-position: center top;
-  }
-
   .home-section {
     padding: 70px 28px;
+  }
+
+  .home-section-link {
+    margin-top: 34px;
   }
 
   .home-section-title {
