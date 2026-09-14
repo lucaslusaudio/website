@@ -112,6 +112,18 @@
 .navigation a.active::after {
   width: 100%;
 }
+
+/* Seção-pai: aparência de ativo, mas continua clicável
+   (usado nas páginas de serviço específico, onde "Serviços" é a seção acima) */
+
+.navigation a.parent-active {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.navigation a.parent-active::after {
+  width: 100%;
+}
 .language-switcher {
   position: absolute;
   top: 50%;

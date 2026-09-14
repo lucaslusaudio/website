@@ -1720,8 +1720,8 @@
   /* --- ABOUT --- */
 
   .about-hero {
-    min-height: 46vh;
-    padding: 40px 20px;
+    min-height: 52vh;
+    padding: 130px 20px 40px;
   }
 
   .about-title {
